@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
         textViewHello.setText(this.getString(R.string.hello_world));
 
-        //Context context=this.getApplicationContext();
-        //String resName="likeAndroid";
-        //int likeId=context.getResources().getIdentifier(resName,"string", context.getPackageName());
-        //textViewHello.setText(this.getString(likeId));
+        Context context=this.getApplicationContext();
+        String resName="likeAndroid";
+        int likeId=context.getResources().getIdentifier(resName,"string", context.getPackageName());
+        textViewHello.setText(this.getString(likeId));
     }
 }
